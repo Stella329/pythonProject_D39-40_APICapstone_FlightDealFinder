@@ -1,5 +1,6 @@
 class CheapestFlightData:
-    #This class is responsible for structuring the flight data.
+    '''This class is responsible for structuring the flight data.
+    注：这里把obj_attribute纯当容器 的方法很重要。写入函数也放在obj之外！'''
     def __init__(self, price, origin_airport, destination_airport, out_date, return_date):
         '''args: source=result from flight_search.py
         AIM: 容器，储存每次查询的lowest-price flight, 创建对比源: 各attribute信息'''
